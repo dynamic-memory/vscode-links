@@ -1,0 +1,63 @@
+{
+	"name": "Links",
+	"patterns": [
+		{
+			"name": "keyword",
+			"match": "\\b(switch|case|var|if|else|fun|sig|unsafe|_|typename)\\b"
+		},
+		{
+			"name": "function",
+			"match": "[a-zA-Z_][a-zA-Z0-9_]*[ ]*[(]"
+		},
+		{
+			"name": "parameter",
+			"match": "[a-zA-Z_][a-zA-Z0-9_]*[ ]*[)|,|\\-|~|\\]]"
+		},
+		{
+			"name": "number",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
+		},
+		{
+			"name": "string",
+			"begin": "\"", "end": "\"",
+			"patterns": [
+				{"include": "#escape-char"}
+			]
+		},
+		{
+			"name": "comment",
+			"match": "#.*$"
+		},
+		{
+			"name": "storage.links.type",
+			"match": "\\b(Int|Float|Bool|Char|String)\\b"
+		},
+		{
+			"name": "storage.links.kind",
+			"match": "\\b(Any|Numeric|Base)\\b"
+		},
+		{
+			"name": "operator",
+			"match": "\\+|-|\\*|/|::|=|\\.\\.|\\^\\^|\\|\\||&&|<|>|>=|<=|==|\\+\\+|!!"
+		},
+		{
+			"name": "meta.embedded.block.xml",
+			"begin": "<#>",
+			"end": "</#>",
+			"patterns": [{
+				"include": "xml"
+			}]
+		},
+		{
+			"name": "variable",
+			"match": "[a-zA-Z_][a-zA-Z0-9_]*" 
+		}
+	],
+	"repository": {
+		"escape-char": {
+			"name": "constant.character.escape.links",
+			"match": "\\\\[\\\\\"nt']"
+		}
+	},
+	"scopeName": "source.links"
+}

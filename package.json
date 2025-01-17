@@ -1,0 +1,44 @@
+{
+	"name": "links",
+	"displayName": "Links",
+	"description": "Links language support for VS Code",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.96.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "links",
+				"aliases": [
+					"Links",
+					"links"
+				],
+				"extensions": [
+					".links"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "links",
+				"scopeName": "source.links",
+				"embeddedLanguages": {
+					"meta.embedded.block.xml": "xml",
+					"meta.embedded.block.html": "html"
+				},
+				"fileTypes": [
+					"lean"
+				],
+				"path": "./syntaxes/links.tmLanguage.json"
+			}
+		]
+	},
+	"__metadata": {
+		"size": 33327
+	}
+}
