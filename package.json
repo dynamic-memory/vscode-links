@@ -6,6 +6,9 @@
 	"engines": {
 		"vscode": "^1.96.0"
 	},
+	"author": "yung-turabian",
+	"publisher": "yung-turabian",
+	"icon": "./icons/links-light.png",
 	"categories": [
 		"Programming Languages"
 	],
@@ -20,7 +23,11 @@
 				"extensions": [
 					".links"
 				],
-				"configuration": "./language-configuration.json"
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"light": "./icons/links-light.png",
+					"dark": "./icons/links-dark.png"
+				}
 			}
 		],
 		"grammars": [
