@@ -1,13 +1,14 @@
 {
-	"name": "links",
-	"displayName": "Links",
+	"name": "links-lang",
+	"displayName": "Links-Lang",
 	"description": "Links language support for VS Code",
 	"version": "0.0.1",
+	"repository": {"url": "https://github.com/dynamic-memory/vscode-links"},
 	"engines": {
 		"vscode": "^1.96.0"
 	},
 	"author": "yung-turabian",
-	"publisher": "yung-turabian",
+	"publisher": "DynamicMemory",
 	"icon": "./icons/links-light.png",
 	"categories": [
 		"Programming Languages"
